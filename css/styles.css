@@ -6,16 +6,26 @@
 }
 
 body{
-        background-image: url(../img/discord_blocks.webp);
+        
+}
+
+.sfondo{
+        background-image: url(../img/discord_blocks.png);
         background-size: cover;
         background-repeat: no-repeat;
+        width: 100%;
+}
+
+.headerbackground {
+    background-color:rgb(172, 215, 230); /* Colore di sfondo semi-trasparente */
+    padding: 10px 0; /* Spaziatura interna */
 }
 
 header.container {
         width: 62%;
         margin: 0.8rem auto;
         padding: 5px 2px;
-        align-items: center;
+        /* align-items: center; */
         background-color: rgb(217, 165, 33);
         font-size: 0.8rem;
         border-style: dashed;
@@ -28,14 +38,37 @@ header.container nav , header.container nav ul {
         flex-direction: row;
         text-decoration: none;
         list-style: none;
-        border-style: dashed;
+       //* border-style: dashed; **/
 }
 
-header.container nav , header.container nav ul {
-    display: flex;
-    /** justify-content: space-between; **/
+.navbar {
+            display: flex;
     align-items: center;
-    flex-direction: row;
+}
+
+.logo {
+    flex: 1;
+    flex-grow: 2;
+}
+
+.nav-links {
+    flex: 2;
+    display: flex;
+    flex-grow: 7;
+    justify-content: center;
+    gap: 10px;
+    border-right: dashed;
+    border-left: dashed;
+
+}
+
+.nav-links li a {
     text-decoration: none;
-    list-style: none;
+    color: black;
+}
+
+.login {
+    flex: 3;
+    flex-grow: 2;
+    text-align: right;
 }
