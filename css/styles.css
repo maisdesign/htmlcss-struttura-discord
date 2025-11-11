@@ -4,3 +4,38 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+        background-image: url(../img/discord_blocks.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+header.container {
+        width: 62%;
+        margin: 0.8rem auto;
+        padding: 5px 2px;
+        align-items: center;
+        background-color: rgb(217, 165, 33);
+        font-size: 0.8rem;
+        border-style: dashed;
+}
+
+header.container nav , header.container nav ul {
+        display: flex;
+        /** justify-content: space-between; **/
+        align-items: center;
+        flex-direction: row;
+        text-decoration: none;
+        list-style: none;
+        border-style: dashed;
+}
+
+header.container nav , header.container nav ul {
+    display: flex;
+    /** justify-content: space-between; **/
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+}
