@@ -8,44 +8,78 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Sfondo solo per confronto 
-     TODO eliminare una volta finito di sistemare -->
-     <div class="sfondo">
-        <!-- Fine sfondo solo per confronto -->
-         <div class="headerbackground">
-            <header class="container">
-                <nav class="navbar">
-                    <div class="logo">Logo</div>
-                    <ul class="nav-links">
-                        <li><a href="#informazioni">link</a></li>
-                        <li><a href="#canali">link</a></li>
-                        <li><a href="#ruoli">link</a></li>
-                        <li><a href="#impostazioni">link</a></li>
-                    </ul><!-- .nav-links -->
-                    <div class="login">
-                        <a href="#login">Login</a>
-                    </div>
-                </nav><!-- .navbar -->
-            </header> <!-- header.container  -->
-        </div>
+    <div class="header-background azzurro">
+        <header class="nav-container ocra border-basic border-black">
+            <nav class="navbar container ">
+                <div class="logo">logo</div>
+                <ul class="nav-links container">
+                    <li><a href="#informazioni">link</a></li>
+                    <li><a href="#canali">link</a></li>
+                    <li><a href="#ruoli">link</a></li>
+                    <li><a href="#impostazioni">link</a></li>
+                </ul><!-- .nav-links -->
+                <div class="login">
+                    <a href="#login">login</a>
+                </div>
+            </nav><!-- .navbar -->
+        </header> <!-- header.nav-container -->
+    </div> <!-- .header-background -->
     <main>
-        <header class="bluscuro container">
-            <div class="slideshow"></div>
+        <header class="slide-container bluscuro container border-basic border-black">
+            <div class="slideshow orchidea border-basic border-black"></div>
         </header>
-        <section class="container main-news" id="informazioni">
-            <article class="news-item">
-                <div class="news-content col-70">
-                    <h2>Cos'è Discord?</h2>
-                    <p>Discord è una piattaforma di comunicazione popolare tra i gamer e le comunità online, che offre chat di testo, voce e video.</p>
+        <section class="container main-news bianco" id="informazioni">
+            <article class="news-item ">
+                <div class="news-content col-40 bluesky border-basic border-black">
+                   
                 </div>
-                <div class="news-content col-30">
-                </div>
+                <div class="news-content col-22 rosa border-basic border-black"></div>
             </article>
+            <article class="news-item grigio">
+                <div class="news-content col-22 rosa border-basic border-black">
+                    
+                </div>
+                <div class="news-content col-40 bluesky border-basic border-black"></div>
+            </article>
+            <article class="news-item ">
+                <div class="news-content col-40 bluesky border-basic border-black">
+                    
+                </div>
+                <div class="news-content col-22 rosa border-basic border-black"></div>
+            </article>
+            <footer class="main-news-footer">
+                <article class="news-item grigio">
+                    <div class="news-content col-62 verde border-basic border-black" id="hero"></div>
+                </article>
+            </footer>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Struttura Discord</p>
+    <footer class="informational fucile">
+        <div class="fucile footer-accordion">  
+            <div class="accordion col-62">
+                <input type="radio" name="acc" id="acc1" title="acc1" checked>
+                <label for="acc1" class="panel"></label>
+            
+                <input type="radio" name="acc" id="acc2" title="acc2">
+                <label for="acc2" class="panel"></label>     
+
+                <input type="radio" name="acc" id="acc3" title="acc3">
+                <label for="acc3" class="panel"></label>
+                
+                <input type="radio" name="acc" id="acc4" title="acc4">
+                <label for="acc4" class="panel"></label>
+
+                <input type="radio" name="acc" id="acc5" title="acc5">
+                <label for="acc5" class="panel"></label>
+            </div> <!-- .accordion -->
+        </div> <!-- .footer-accordion -->
+        <div class="spacer"></div>
+        <div class="footer-padding">
+            <div class="nav-footer verdepastello container col-62">
+                <div class="logo-footer footer-labels border-basic border-black">Logo</div>
+                <div class="back-up footer-labels border-basic border-black">Bottone</div>
+            </div>
+        </div> <!-- .footer-accordion -->
     </footer>
-    </div>
 </body>
 </html>

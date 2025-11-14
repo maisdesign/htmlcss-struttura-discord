@@ -1,3 +1,5 @@
+
+/*! Basic Stylesheet for Discord-like Layout */
 /* Reset CSS */
 * {
     margin: 0;
@@ -5,44 +7,120 @@
     box-sizing: border-box;
 }
 
-body{
-        
-}
-
-.sfondo{
-        background-image: url(../img/discord_blocks.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+.container{
         width: 100%;
+        margin: 0 auto;
 }
 
-.headerbackground {
-    background-color:rgb(172, 215, 230); /* Colore di sfondo semi-trasparente */
+.border-basic{
+    border-style: dashed;
+    border-width: 1px;
+}
+
+.border-black{
+        border-color: black;
+}
+
+.border-white{
+        border-color: white;
+}
+
+.navbar,
+.nav-links,
+.slide-container,
+.news-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*! Color Palette */
+
+.bluscuro {
+    background-color: rgb(0, 0, 140);
+}
+
+.ocra {
+    background-color: rgb(217, 165, 33);
+}
+
+.azzurro{
+        background-color:rgb(172, 215, 230);
+}
+
+.orchidea {
+    background-color: rgb(237, 130, 237);
+}
+
+.bianco {
+    background-color: rgb(255, 255, 255);
+}
+
+.grigio {
+    background-color: rgb(212, 212, 212);
+}
+
+.rosa {
+    background-color: rgb(255, 191, 202);
+}
+
+.bluesky {
+    background-color: rgb(31, 143, 255);
+}
+
+.verde{
+    background-color: rgb(34, 140, 34);
+}
+
+.fucile{
+    background-color: rgb(34, 38, 41);
+}
+
+.acquamarina{
+    background-color: rgb(32, 179, 171);
+}
+
+.salmone{
+    background-color: rgb(240, 127, 127);
+}
+
+.verdepastello{
+    background-color: rgb(128, 255, 212);
+}
+
+/*! Grid System */
+
+.col-40 {
+    width: 40%;
+}
+
+.col-22 {
+    width: 22%;
+}
+
+.col-62{
+    width: 62%;
+}
+
+
+/*! Header Styles */
+
+.header-background { /* Colore di sfondo semi-trasparente */
     padding: 10px 0; /* Spaziatura interna */
 }
 
-header.container {
+.nav-container {
         width: 62%;
         margin: 0.8rem auto;
         padding: 5px 2px;
-        /* align-items: center; */
-        background-color: rgb(217, 165, 33);
         font-size: 0.8rem;
-        border-style: dashed;
 }
 
-header.container nav , header.container nav ul {
-        display: flex;
-        /** justify-content: space-between; **/
-        align-items: center;
-        flex-direction: row;
-        text-decoration: none;
+.nav-container nav ul {
         list-style: none;
-       //* border-style: dashed; **/
 }
 
 .navbar {
-            display: flex;
     align-items: center;
 }
 
@@ -53,12 +131,13 @@ header.container nav , header.container nav ul {
 
 .nav-links {
     flex: 2;
-    display: flex;
     flex-grow: 7;
     justify-content: center;
     gap: 10px;
     border-right: dashed;
     border-left: dashed;
+    border-width: 1px;
+    border-color: black;
 
 }
 
@@ -71,4 +150,97 @@ header.container nav , header.container nav ul {
     flex: 3;
     flex-grow: 2;
     text-align: right;
+}
+
+.login a {
+    text-decoration: none;
+    color: black;
+}
+
+/*! Main Styles */
+
+.slide-container {
+    padding: 20px 0;
+    font-size: 0.8rem;
+}
+
+.slideshow {
+        height: 240px;
+        width: 48%;
+}
+
+.news-item {
+    padding: 20px 0; 
+}
+
+.news-content {
+    padding: 10px;
+    height: 360px;
+}
+
+#hero{
+    height: 500px;
+}
+
+/*! Accordion Styles */
+
+.footer-accordion {
+    padding: 10px 0 20px 0;
+}
+
+.accordion {
+  display: flex;
+  height: 300px;
+  margin: auto;
+}
+
+.accordion input {
+    display: none;
+}
+
+/** pannelli chiusi = 1 unità */
+.panel {
+    flex: 1 1 0;
+    background-color: rgb(32, 179, 171);
+    height: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed white;
+    transition: flex 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+/** pannello aperto = 2 unità */
+.accordion input:checked + .panel {
+    flex: 2 1 0;
+    background-color: rgb(240, 127, 127);
+    color: white;
+    border-color: black;
+    margin: 0 1px 0 0;
+}
+
+.spacer {
+    height: 2px;
+    background-color: white;;
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 2px 0 20px 0;
+}
+
+.footer-labels {
+    padding: 2px 10px;
+    background-color: rgb(255, 181, 192);
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-padding {
+    padding: 10px 0;
 }
